@@ -1,0 +1,27 @@
+html,body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.mainTitle {
+  height: 37%;
+  background-color: aqua;
+}
+
+.mainTitleTextPre {
+  position: relative;
+  height: 30%;
+  width:40%;
+  float:left;
+  text-align:right ;
+  background-color: beige;
+}
+
+.mainTitleText {
+  position: relative;
+  height: 70%;
+  width: 70%;
+  float: right;
+  font-size: 2rem;
+  background-color: blueviolet;
+} 
