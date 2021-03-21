@@ -2,26 +2,64 @@ html,body{
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden
 }
+
 .mainTitle {
-  height: 37%;
-  background-color: aqua;
+  margin-top: 20%;
+  height: 35%;
+  text-align: center;
+  /* background-color: aqua; */
 }
 
 .mainTitleTextPre {
   position: relative;
-  height: 30%;
-  width:40%;
-  float:left;
-  text-align:right ;
-  background-color: beige;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15%;
+  width:60%;
+  text-align:left ;
+  line-height: 100%;
+  /* background-color: beige; */
 }
 
 .mainTitleText {
   position: relative;
-  height: 70%;
-  width: 70%;
-  float: right;
-  font-size: 2rem;
-  background-color: blueviolet;
+  height: 40%;
+  text-align: center;
+  line-height: 100%;
+  font-size: 1.5rem;
+  /* background-color: blueviolet; */
 } 
+
+.mainTitleTextCH {
+  position: relative;
+  height: 35%;
+  width:100%;
+  font-size: 2rem;
+  text-align: center;
+  /* background-color: blue; */
+}
+
+.buttonArea{
+
+  width:60%;
+  height: 40%;
+  margin-top: 5%;
+}
+
+.optionButton{
+  position: relative;
+  margin: 1rem auto;
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  border-style: solid;
+  border-color: darkgray;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  /* background-color: aqua; */
+}
