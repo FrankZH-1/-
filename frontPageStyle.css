@@ -2,7 +2,12 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body{
+  background: linear-gradient(0deg,#3d3c52 0%,#3d3c52 29.9%,#a88d96 30%,#5e495e 40%,#392f4a 58%,#1b1b33 100%);
 }
 
 .mainTitle {
@@ -11,26 +16,27 @@ html, body {
   text-align: center;
   /* background-color: aqua; */
 }
-
-.mainTitleTextPre {
+.mainTitleText, .mainTitleTextPre{
   position: relative;
+  line-height: 100%;
+  color: white;
+  font-family: Georgia, serif ;
+}
+.mainTitleTextPre {
+  
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   height: 15%;
   width: 60%;
   text-align: left;
-  line-height: 100%;
-  /* background-color: beige; */
+  font-size: 1rem;
 }
 
 .mainTitleText {
-  position: relative;
   height: 40%;
   text-align: center;
-  line-height: 100%;
   font-size: 1.5rem;
-  /* background-color: blueviolet; */
 }
 
 .mainTitleTextCH {
@@ -38,8 +44,8 @@ html, body {
   height: 35%;
   width: 100%;
   font-size: 2rem;
+  color: white;
   text-align: center;
-  /* background-color: blue; */
 }
 
 .actArea {
@@ -48,53 +54,106 @@ html, body {
 }
 
 .startButton {
+  position: absolute;
   margin-top: 2.5rem;
+  transform: skew(-15deg);
+  animation: moveIn 0.5s;
+  z-index: 2;
 }
 
 .functionButtons {
+  position: absolute;
   width: 60%;
   height: 35%;
   margin-top: 5%;
-  display: none;
+  z-index: 1;
 }
 
 .optionButton {
   position: relative;
-  margin: 1rem auto 1rem -4rem;
-  width: 12rem;
-  height: 2rem;
+  margin: 1rem auto 1rem -1rem;
+  width: 7rem;
+  height: 2.2rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 2rem;
   transform: skew(-15deg);
-  background-color: darkgray;
-  border-style: solid;
-  border-color: darkgray;
-  border-width: 0.1rem;
+  background-color: white;
+  border-style: none;
+  overflow: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* .optionButton::before{
+  content: "";
+  position: absolute;
+  margin: -10px;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  filter: blur(10px);
+  background: inherit;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.optionButton::after{
+  content: "";
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color: white;
+  opacity: 0.55;
+  z-index: -1;
+} */
+
+.startButton .optionButton
+{
+  transform: skew(0);
+}
+
+.functionButtons .optionButton
+{
+  transform:translateX(-7rem);
+} 
+
+.functionButtons .optionButton:first-child{
+  /* background-color: #824947; */
 }
 
 .buttonText {
   transform: skew(15deg);
 }
 
-/* .buttonArea div:not(:first-child){
-  display: none;
-} */
-
-@keyframes runIn{
+@keyframes moveIn{
   from {
-    transform: translateX(-8rem);
+    transform: translateX(-7rem) skew(-15deg);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(0rem) skew(-15deg);
   }
 }
 
-@keyframes runOut{
+@keyframes moveOut{
   from{
-    transform: translateX(0);
+    transform: translateX(0) skew(-15deg);
   }
   to{
-    transform: translateX(-8em);
+    transform: translateX(-7rem) skew(-15deg); 
   }
+}
+
+@keyframes fadeIn{
+
 }
