@@ -42,5 +42,5 @@ window.onload = function () {
   // console.log(backButton);
   startGame.addEventListener("touchend", clickStart);
   backButton.addEventListener("touchend", clickBack);
-
 }
+
