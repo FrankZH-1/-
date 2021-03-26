@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>createRoom</title>
+  <link href="stylesheets/createRoom.css" type="text/css" rel="stylesheet">
+  <script src="javascripts/createRoom.js"></script>
+  <script src="javascripts/adaption.js"></script>
+  <script src="https://47.99.223.94:3000/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <h1>创建房间</h1>
+  <div class="input">
+    <div class="inputTitle">房间名称（可用数字、字母、中文字符）</div>
+    <input type="text" name="roomName" class="roomName">
+  </div>
+  <div class="input">
+    <div class="inputTitle">游戏人数</div>
+    <select class="selectNumber persons">
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+
+  <div class="input">
+    <div class="inputTitle">胜利条件</div>
+    <select class="selectMode">
+      <option value="clearVillage">屠城</option>
+      <option value="clearSide">屠边</option>
+    </select>
+  </div>
+
+  <div class="chooseArea">
+
+    <div class="characterChosen">
+      <div class="characterIcons gods witch"></div>
+      <div class="inputTitle">女巫</div>
+    </div>
+    <div class="characterChosen">
+      <div class="characterIcons gods hunter"></div>
+      <div class="inputTitle">猎人</div>
+    </div>
+    <div class="characterChosen">
+      <div class="characterIcons gods prophet"></div>
+      <div class="inputTitle">预言家</div>
+    </div>
+    <div class="characterChosen">
+      <div class="characterIcons gods idiot"></div>
+      <div class="inputTitle">白痴</div>
+    </div>
+    <div class="characterChosen">
+      <div class="characterIcons"></div>
+      <div class="inputTitle">狼人</div>
+      <select class="selectNumber wolves">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+      </select>
+    </div>
+    <div class="characterChosen">
+      <div class="characterIcons"></div>
+      <div class="inputTitle">村民</div>
+      <select class="selectNumber villagers">
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="submitZone">
+    <div class="submitButton confirm">确认</div>
+    <div class="submitButton save">保存预设</div>
+  </div>
+
+</body>
+
+</html>
