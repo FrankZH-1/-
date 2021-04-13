@@ -1,0 +1,72 @@
+{
+  "roomName": "name",
+  "firstDay": true,
+  "time": false,
+  "playerList": [
+    {
+      "id": "",
+      "name": "",
+      "character": "wolves",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "wolves",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "witch",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "prophet",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "hunter",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "idiot",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "villagers",
+      "skill": false,
+      "living": true,
+      "act": true
+    },
+    {
+      "id": "",
+      "name": "",
+      "character": "villagers",
+      "skill": false,
+      "living": true,
+      "act": true
+    }
+  ],
+  "winningCondition": "clearSide"
+}

@@ -13,18 +13,16 @@
 })(document, window);
 
 window.onload = function(){
-  var app = require('express')(),
-  http = require("http").Server(app),
   socket = io(),
   optionButtons = document.querySelectorAll(".chooseOption"),
-  confirmButton = document.querySelectorAll(".confirmButton");
+  confirmButton = document.querySelector(".confirmButton");
   var sendChoose = function(element){
-    socket.emit("vote commit",'')
+    socket.emit("vote commit",'123')
   }
   Array.prototype.forEach.call(optionButtons,(item)=>{
     item.addEventListener('touchend',sendChoose(item));
   })
   (function (){
-
+    
   })();
 }
